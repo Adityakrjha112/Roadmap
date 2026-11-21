@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your first responsive dashboard</title>
+<style>
+* { box-sizing: border-box; }
+:root { --page: #f6f5ed; --surface: #fffef8; --ink: #263e30; --line: #d6ddce; --accent: #1e6148; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; }
+a { color: var(--accent); text-underline-offset: .2em; }
+:focus-visible { outline: 3px solid #b96c26; outline-offset: 4px; }
+.top { position: sticky; top: 0; z-index: 1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1rem 4%; background: var(--surface); border-bottom: 1px solid var(--line); }
+.shell { max-width: 90rem; margin: auto; display: grid; grid-template-columns: minmax(0,1fr); }
+.side { padding: 1.5rem; }
+.side a { display: block; padding: .5rem; }
+.side p, .eyebrow { font-size: .75rem; letter-spacing: .12em; }
+main { min-width: 0; padding: clamp(1rem,4vw,3rem); }
+h1 { max-width: 21ch; font-size: clamp(2rem,1rem + 3vw,3.8rem); line-height: 1.1; font-weight: 550; }
+section { margin-block: 3rem; scroll-margin-top: 6rem; }
+.cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit,minmax(min(100%,20rem),1fr)); }
+.slot { container-type: inline-size; }
+.bike-card { height: 100%; padding: 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: .8rem; display: grid; gap: 1rem; }
+.bike-card img { width: 100%; height: auto; border-radius: .4rem; }
+@container (min-width: 27rem) { .bike-card { grid-template-columns: 1fr 1fr; align-items: center; } }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: .5rem; }
+table { border-collapse: collapse; width: 100%; min-width: 35rem; background: var(--surface); }
+caption { padding: 1rem; text-align: start; }
+th,td { padding: 1rem; text-align: start; border-top: 1px solid var(--line); }
+footer { padding: 2rem; text-align: center; }
+@media (min-width: 55rem) { .shell { grid-template-columns: 13rem minmax(0,1fr); } .side { border-right: 1px solid var(--line); } }
+@media (prefers-color-scheme: dark) { :root { --page: #17231b; --surface: #203127; --ink: #eef3e8; --line: #415a48; --accent: #a4d8ad; } }
+</style>
+</head>
+<body>
+<header class="top"><a href="#overview">Sunday Cycle Club</a><a href="booking.html">Book a ride ↗</a></header>
+<div class="shell"><nav class="side" aria-label="Dashboard"><p>YOUR WEEKEND</p><a href="#overview">Overview</a><a href="#bikes">Available bikes</a><a href="#prices">Rental prices</a><a href="booking.html">Booking form</a></nav>
+<main id="overview"><p class="eyebrow">A LITTLE FRESH AIR</p><h1>Your next adventure is around the corner.</h1><p>Pick a bike. Take your time. Find a new favorite street.</p>
+<section id="bikes"><h2>Ready when you are</h2><div class="cards"><div class="slot"><article class="bike-card"><img src="../assets/bicycle.svg" width="800" height="480" alt="Green city bicycle"><div><h3>City cruiser</h3><p>Upright and easygoing.</p><a href="booking.html">Choose this ride →</a></div></article></div><div class="slot"><article class="bike-card"><img src="../assets/bicycle.svg" width="800" height="480" alt="Green city bicycle"><div><h3>Weekend explorer</h3><p>A little further, a little slower.</p><a href="booking.html">Choose this ride →</a></div></article></div><div class="slot"><article class="bike-card"><img src="../assets/bicycle.svg" width="800" height="480" alt="Green city bicycle"><div><h3>Riverside rider</h3><p>Made for the scenic route.</p><a href="booking.html">Choose this ride →</a></div></article></div></div></section>
+<section id="prices"><h2>Simple daily prices</h2><div class="table-wrap" role="region" tabindex="0" aria-label="Daily rental prices"><table><caption>One-day rentals, helmet included</caption><thead><tr><th scope="col">Bike</th><th scope="col">Duration</th><th scope="col">Daily price</th><th scope="col">Pickup</th></tr></thead><tbody><tr><th scope="row">City cruiser</th><td>24 hours</td><td>₹250</td><td>Town square</td></tr><tr><th scope="row">Touring bike</th><td>24 hours</td><td>₹400</td><td>Riverside</td></tr></tbody></table></div></section></main></div><footer>Built with HTML, CSS, and a little curiosity.</footer>
+</body>
+</html>

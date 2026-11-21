@@ -1,0 +1,25 @@
+{
+  "verified_on": "2026-11-07",
+  "audience": "Frontend developers with 2–5 years of experience; app import and interview practice",
+  "versions": {"ECMAScript": "ES2024 baseline and standardized later features; ES2026 published", "React": "19.3", "Next.js": "16.4.5 App Router", "TypeScript": "5.9-compatible as requested; current documentation also lists 6.0", "Tailwind CSS": "4.3", "Browsers": "Current evergreen; avoid experimental APIs"},
+  "counts": {
+    "JS": [150,38,67,45], "REACT": [100,25,45,30], "NEXT": [65,16,29,20],
+    "TS": [45,11,20,14], "HCT": [45,11,20,14], "DOM": [25,6,11,8],
+    "ASYNC": [25,6,11,8], "PAS": [25,6,11,8], "DBG": [20,5,9,6]
+  },
+  "topic_map": {
+    "JS": "001–038 values, coercion, declarations, everyday collections; 039–105 closures, this, objects, functional transformations, modules, iterators; 106–150 descriptors, proxies, weak references, advanced cloning and composition",
+    "REACT": "001–025 rendering, JSX, props, state, forms; 026–070 effects, refs, reducer, context, memoization, custom hooks; 071–100 Suspense, transitions, actions, use, compiler, architecture",
+    "NEXT": "001–016 routing and component boundaries; 017–045 request APIs, server actions, metadata, assets, rendering and caching; 046–065 cache configuration, streaming, advanced routes and security",
+    "TS": "001–011 basic structural types and narrowing; 012–031 generics, utilities, React types and configuration; 032–045 conditional, infer, mapped, template-literal and API design",
+    "HCT": "001–011 HTML semantics and CSS basics; 012–031 layout, forms, responsive CSS and Tailwind utilities; 032–045 cascade, containers, relational selectors and Tailwind theming",
+    "DOM": "001–006 selection and events; 007–017 observers, storage, fetch and history; 018–025 workers, CORS, rendering and browser lifecycles",
+    "ASYNC": "001–006 promises and await; 007–017 combinators, queues and cancellation; 018–025 async iterators, cleanup and concurrency",
+    "PAS": "001–006 metrics, labels and metadata; 007–017 loading, keyboard, focus and SEO; 018–025 profiling, memory, composite widgets and architecture",
+    "DBG": "001–005 basic data and UI bugs; 006–014 races, effects and layout; 015–020 cross-layer caching, stores, accessibility and resource ownership"
+  },
+  "question_types": ["MCQ","Predict Output","Code Trace","Find the Bug","Fix the Code","Write Code","Conceptual","Scenario","Architecture","Follow-up"],
+  "type_plan": "Every sheet includes MCQ, Conceptual, Scenario, Find the Bug, Fix the Code or Write Code, and Follow-up; executable sheets also include Predict Output and Code Trace. Aim above 50% code coverage.",
+  "summary_policy": "Compute all Overview counts from JSON at build time and store them as text to honor the all-text requirement. No workbook formulas.",
+  "batch_size": 50
+}

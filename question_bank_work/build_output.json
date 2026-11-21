@@ -1,0 +1,17 @@
+{
+  "outputPath": "/Users/adityajha/Developer/Roadmap/outputs/frontend-interview-bank/frontend_interview_question_bank.xlsx",
+  "sheets": [
+    "Overview",
+    "Schema",
+    "All_Questions",
+    "JavaScript",
+    "React",
+    "NextJS",
+    "TypeScript",
+    "HTML_CSS_Tailwind",
+    "DOM_Browser",
+    "Async_EventLoop",
+    "Perf_A11y_SEO",
+    "Debugging_Scenarios"
+  ]
+}

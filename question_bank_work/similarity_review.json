@@ -1,0 +1,114 @@
+[
+  [
+    0.75,
+    "ASYNC-008",
+    "JS-053",
+    "What exact string is logged?",
+    "What exact JSON string is logged?"
+  ],
+  [
+    0.667,
+    "JS-065",
+    "JS-128",
+    "What does this generator log?",
+    "What does this delegated generator log?"
+  ],
+  [
+    0.667,
+    "JS-065",
+    "JS-066",
+    "What does this generator log?",
+    "What does spreading this generator log?"
+  ],
+  [
+    0.6,
+    "JS-034",
+    "JS-132",
+    "What do these inventory checks log?",
+    "What do these dictionary checks log?"
+  ],
+  [
+    0.6,
+    "JS-030",
+    "JS-132",
+    "What do these ownership checks log?",
+    "What do these dictionary checks log?"
+  ],
+  [
+    0.6,
+    "JS-030",
+    "JS-034",
+    "What do these ownership checks log?",
+    "What do these inventory checks log?"
+  ],
+  [
+    0.5,
+    "JS-076",
+    "JS-088",
+    "What does this property update log?",
+    "What does this nested update log?"
+  ],
+  [
+    0.5,
+    "JS-066",
+    "JS-128",
+    "What does spreading this generator log?",
+    "What does this delegated generator log?"
+  ],
+  [
+    0.5,
+    "JS-015",
+    "JS-058",
+    "What does this account lookup log?",
+    "What does this history lookup log?"
+  ],
+  [
+    0.5,
+    "JS-008",
+    "JS-075",
+    "What does this price transformation log?",
+    "What does this configuration transformation log?"
+  ],
+  [
+    0.5,
+    "JS-003",
+    "JS-080",
+    "What does this checkout calculation log?",
+    "What does this integer calculation log?"
+  ],
+  [
+    0.5,
+    "JS-001",
+    "JS-088",
+    "What does this configuration update log?",
+    "What does this nested update log?"
+  ],
+  [
+    0.5,
+    "JS-001",
+    "JS-076",
+    "What does this configuration update log?",
+    "What does this property update log?"
+  ],
+  [
+    0.5,
+    "JS-001",
+    "JS-075",
+    "What does this configuration update log?",
+    "What does this configuration transformation log?"
+  ],
+  [
+    0.5,
+    "ASYNC-018",
+    "JS-065",
+    "What does this async generator consumer log?",
+    "What does this generator log?"
+  ],
+  [
+    0.5,
+    "ASYNC-015",
+    "ASYNC-016",
+    "What does this recovered chain log?",
+    "What does this finally chain log?"
+  ]
+]

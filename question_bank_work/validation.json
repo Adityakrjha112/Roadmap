@@ -1,0 +1,109 @@
+{
+  "checks": {
+    "Exactly 500 rows and target technology counts": true,
+    "Technology sheet totals reconcile": true,
+    "Exact 15-column schema and order": true,
+    "Unique correctly prefixed sequential IDs": true,
+    "Unique normalized question text": true,
+    "Required fields complete": true,
+    "Allowed difficulty and question-type values": true,
+    "MCQ JSON, four distinct A–D options, valid answer": true,
+    "Non-MCQ Options are empty": true,
+    "Output and trace fields are exact and complete": true,
+    "Nonapplicable expected outputs are empty": true,
+    "HTTPS deep links on approved domains": true,
+    "Difficulty mix within ±5 percentage points per technology": true,
+    "At least six question types per technology": true,
+    "At least 40 percent include code": true,
+    "Code coverage excludes comment-only prompts": true,
+    "Every follow-up references an existing parent": true,
+    "All values are text and below 32000 characters": true,
+    "No placeholder values or Markdown fences": true,
+    "Raw code uses real line breaks and two-space indentation": true,
+    "Every code question has numbered explanation steps": true,
+    "Every cited source retrieved successfully": true,
+    "Every output and trace example executed successfully": true
+  },
+  "total": 500,
+  "counts": {
+    "Async JavaScript & Event Loop": 25,
+    "Debugging & Real-World Scenarios": 20,
+    "DOM & Browser APIs": 25,
+    "HTML, CSS, Tailwind": 45,
+    "JavaScript (Basic → Advanced)": 150,
+    "Next.js": 65,
+    "Performance, Accessibility, SEO": 25,
+    "React.js & Hooks": 100,
+    "TypeScript": 45
+  },
+  "difficulty": {
+    "Beginner": 124,
+    "Intermediate": 223,
+    "Advanced": 153
+  },
+  "matrix": {
+    "JavaScript": {
+      "Beginner": 38,
+      "Intermediate": 67,
+      "Advanced": 45
+    },
+    "React": {
+      "Beginner": 25,
+      "Intermediate": 45,
+      "Advanced": 30
+    },
+    "NextJS": {
+      "Beginner": 16,
+      "Intermediate": 29,
+      "Advanced": 20
+    },
+    "TypeScript": {
+      "Beginner": 11,
+      "Intermediate": 20,
+      "Advanced": 14
+    },
+    "HTML_CSS_Tailwind": {
+      "Beginner": 11,
+      "Intermediate": 20,
+      "Advanced": 14
+    },
+    "DOM_Browser": {
+      "Beginner": 6,
+      "Intermediate": 11,
+      "Advanced": 8
+    },
+    "Async_EventLoop": {
+      "Beginner": 6,
+      "Intermediate": 11,
+      "Advanced": 8
+    },
+    "Perf_A11y_SEO": {
+      "Beginner": 6,
+      "Intermediate": 11,
+      "Advanced": 8
+    },
+    "Debugging_Scenarios": {
+      "Beginner": 5,
+      "Intermediate": 9,
+      "Advanced": 6
+    }
+  },
+  "question_types": {
+    "MCQ": 76,
+    "Predict Output": 71,
+    "Find the Bug": 76,
+    "Conceptual": 91,
+    "Code Trace": 13,
+    "Scenario": 60,
+    "Write Code": 69,
+    "Follow-up": 26,
+    "Architecture": 15,
+    "Fix the Code": 3
+  },
+  "code_count": 242,
+  "code_percent": 48.4,
+  "output_examples_executed": 84,
+  "unique_sources": 323,
+  "similarity_candidates": 16,
+  "errors": []
+}

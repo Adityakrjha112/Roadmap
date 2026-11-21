@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A booking page with good manners</title>
+</head>
+<body>
+<header><p>Sunday Cycle Club</p><nav aria-label="Main"><a href="#booking">Book a ride</a> · <a href="#questions">Questions</a></nav></header>
+<main><h1>A slower Sunday starts here.</h1><p>Tell us a little about your ride.</p>
+<p><strong>Practice form:</strong> use made-up details. Valid submission reloads this local page with demo values in the URL; nothing is sent to a booking service.</p>
+<form id="booking" method="get"><fieldset><legend>Contact details</legend>
+<p><label for="rider">Full name</label><br><input id="rider" name="rider" autocomplete="name" required></p>
+<p><label for="email">Email address</label><br><input id="email" name="email" type="email" autocomplete="email" required></p></fieldset>
+<fieldset><legend>Your ride</legend><p><label for="date">Pickup date</label><br><input id="date" name="date" type="date" required></p>
+<p><label for="bike">Bike style</label><br><select id="bike" name="bike"><option value="city">City cruiser</option><option value="touring">Touring bike</option></select></p>
+<label><input type="checkbox" name="helmet" value="yes"> Include a helmet</label></fieldset>
+<button type="submit">Check my details</button></form>
+<section id="questions"><h2>Before you arrive</h2><details><summary>Where do we meet?</summary><p>At the town square bike stand.</p></details></section></main>
+<footer><p>Take the scenic route.</p></footer>
+</body>
+</html>
